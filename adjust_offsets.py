@@ -30,6 +30,8 @@ def main():
         BlockNumber           = 'a1'
     elif socket.gethostname() == 'PI3B02':
         BlockNumber           = 'a2'
+    elif socket.gethostname() == 'PI3B03':
+        BlockNumber           = 'a3'
     # Open a socket to read CSV.
     ifile  = open("offsets.csv", "rb")
     reader = csv.reader(ifile)
